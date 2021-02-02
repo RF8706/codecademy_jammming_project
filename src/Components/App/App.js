@@ -4,7 +4,7 @@ import './App.css';
 
 import SearchBar from '../SearchBar/SearchBar'
 import SearchResults from '../SearchResults/SearchResults'
-import Playlist from '../Playlist/Playlist'
+import NewPlaylist from '../NewPlaylist/NewPlaylist'
 
 import Spotify from '../../util/Spotify'
 
@@ -82,7 +82,7 @@ class App extends Component {
               <SearchResults 
                 searchResults={this.state.searchResults}
                 onAdd={this.addTrack} />
-              <Playlist 
+              <NewPlaylist 
                 playlistName={this.state.playlistName}
                 playlistTracks={this.state.playlistTracks}
                 onSave={this.savePlaylist}

@@ -6,6 +6,7 @@ let accessToken
 
 const Spotify = {
 
+  // GET ACCESS TOKEN
   getAccessToken() {
     if(accessToken) {
       return accessToken
@@ -28,6 +29,7 @@ const Spotify = {
     }
   },
 
+  // SEARCH TRACKS
   search(term) {
     const accessToken = Spotify.getAccessToken()
     return fetch(`https://api.spotify.com/v1/search?type=track&q=${term}`, { 
@@ -52,6 +54,7 @@ const Spotify = {
     })
   },
 
+  // SAVE A PLAYLIST TO SPOTIFY ACCOUNT
   savePlaylist(name, trackURIs) {
 
     if(!name || !trackURIs.length) {

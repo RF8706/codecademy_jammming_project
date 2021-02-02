@@ -8,6 +8,10 @@ html {
   font-size: 18px;
 }
 
+body {
+  display: grid;
+}
+
 h1 {
   padding: .77rem 0;
   margin: 0;
@@ -23,10 +27,8 @@ h1 .highlight {
 }
 
 h2 {
-  text-align: center;
   font-family: 'Poppins', sans-serif;
   font-size: 1.55rem;
-  margin: 2rem 0;
 }
 
 .App {
